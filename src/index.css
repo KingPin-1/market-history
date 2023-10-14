@@ -16,35 +16,17 @@ body {
     box-sizing: border-box;
 }
 
-.table-block {
-    max-width: 100%;
-    display: block;
-    overflow: auto;
-    margin: 2rem 0;
-    padding: 8px 0;
-}
-
-.dark tr:first-of-type > td {
-    border-bottom: 1px solid white;
-    padding-bottom: 1rem;
-}
-
-.dark td:first-of-type {
-    border-right: 1px solid white;
-}
-
-tr:first-of-type > td {
-    border-bottom: 1px solid black;
-    padding-bottom: 1rem;
-}
-
-td:first-of-type {
-    border-right: 1px solid black;
-}
-
-td {
+td,
+th {
+    max-width: 100px;
+    min-width: 100px;
+    padding: 0.75rem 0.5rem;
     position: relative;
-    padding: 8px 12px;
+}
+
+th {
+    min-width: 150px;
+    text-align: center;
 }
 
 .green {
@@ -55,17 +37,17 @@ td {
     content: '';
     position: absolute;
     top: calc(50% - 2px);
-    right: 4px;
+    right: 1rem;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid lightgreen;
-  }
-  
-  .red::after {
+}
+
+.red::after {
     content: '';
     position: absolute;
     top: calc(50% - 2px);
-    right: 4px;
+    right: 1rem;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 7px solid red;
